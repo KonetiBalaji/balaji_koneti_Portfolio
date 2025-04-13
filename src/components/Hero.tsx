@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="pt-28 pb-16 px-6 bg-gradient-to-b from-blue-50 to-white dark:from-gray-900 dark:to-black min-h-[90vh] flex flex-col-reverse md:flex-row items-center justify-center gap-12"
+      className="pt-28 pb-16 px-6 bg-white dark:bg-black min-h-[90vh] flex flex-col-reverse md:flex-row items-center justify-center gap-12"
     >
       {/* Text Content */}
       <div className="text-center md:text-left max-w-xl">
@@ -23,7 +23,6 @@ export default function Hero() {
             href="/Balaji_Resume.pdf"
             download
             className="bg-blue-600 text-white px-6 py-2 rounded shadow hover:bg-blue-700 transition-transform transform hover:scale-105"
-
           >
             Download Resume
           </a>
@@ -31,7 +30,6 @@ export default function Hero() {
             href="/Balaji_CV.pdf"
             download
             className="border border-blue-600 text-blue-600 px-6 py-2 rounded shadow hover:bg-blue-50 dark:hover:bg-gray-800 transition-transform transform hover:scale-105"
-
           >
             Download CV
           </a>
@@ -39,11 +37,11 @@ export default function Hero() {
       </div>
 
       {/* Profile Image */}
-      <div className="w-44 h-44 md:w-56 md:h-56 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center shadow-lg">
+      <div className="w-43 h-43 md:w-55 md:h-55 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center shadow-lg">
         <img
           src="/profile.jpg"
           alt="Balaji Koneti"
-          className="w-36 h-36 md:w-48 md:h-48 rounded-full object-cover border-4 border-white dark:border-gray-800"
+          className="w-37 h-37 md:w-49 md:h-49 rounded-full object-cover border-4 border-white dark:border-gray-800"
         />
       </div>
     </section>

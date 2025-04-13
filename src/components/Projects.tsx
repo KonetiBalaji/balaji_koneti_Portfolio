@@ -1,6 +1,6 @@
 'use client';
 
-import { FaGithub } from 'react-icons/fa'; // ✅ Real GitHub Icon (Black)
+import { FaGithub } from 'react-icons/fa';
 
 const projects = [
   {
@@ -30,7 +30,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="px-6 py-20 max-w-5xl mx-auto text-center md:text-left"
+      className="px-6 py-20 max-w-5xl mx-auto text-center md:text-left bg-white dark:bg-black transition-colors duration-300"
     >
       <h2 className="text-3xl font-bold mb-10 text-gray-900 dark:text-white">
         Projects
@@ -51,19 +51,18 @@ export default function Projects() {
               </p>
 
               <div className="mb-4 flex flex-wrap items-center gap-2">
-  <span className="text-sm font-medium text-blue-600 dark:text-blue-400 shrink-0">
-    <b>Skills</b>:
-  </span>
-  {project.tags.map((tag, idx) => (
-    <span
-      key={idx}
-      className="bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-100 px-3 py-1 rounded-full text-sm hover:bg-gray-200 dark:hover:bg-gray-600 transition"
-    >
-      {tag}
-    </span>
-  ))}
-</div>
-
+                <span className="text-sm font-medium text-blue-600 dark:text-blue-400 shrink-0">
+                  <b>Skills</b>:
+                </span>
+                {project.tags.map((tag, idx) => (
+                  <span
+                    key={idx}
+                    className="bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-100 px-3 py-1 rounded-full text-sm hover:bg-gray-200 dark:hover:bg-gray-600 transition"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
             </div>
 
             <a

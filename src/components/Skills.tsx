@@ -23,7 +23,7 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="px-6 py-20 max-w-5xl mx-auto text-center md:text-left"
+      className="px-6 py-20 max-w-5xl mx-auto text-center md:text-left bg-white dark:bg-black transition-colors duration-300"
     >
       <h2 className="text-3xl font-bold mb-10 text-gray-900 dark:text-white">
         Skills
@@ -42,7 +42,7 @@ export default function Skills() {
               {group.items.map((skill, i) => (
                 <span
                   key={i}
-                  className="bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-100 px-3 py-1 rounded-full text-sm hover:bg-gray-200 dark:hover:bg-gray-600 transition"
+                  className="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-100 px-3 py-1 rounded-full text-sm hover:bg-gray-200 dark:hover:bg-gray-600 transition"
                 >
                   {skill}
                 </span>

@@ -2,7 +2,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="px-6 py-20 max-w-5xl mx-auto text-center md:text-left"
+      className="px-6 py-20 max-w-5xl mx-auto text-center md:text-left bg-white dark:bg-black"
     >
       <h2 className="text-3xl font-bold mb-6 text-gray-900 dark:text-white">
         About Me
@@ -14,21 +14,20 @@ export default function About() {
       </p>
 
       <div className="flex flex-wrap justify-center md:justify-start gap-3">
-        <span className="bg-blue-100 text-blue-800 px-4 py-1 rounded-full text-sm transition-transform transform hover:scale-105">
-          AI/ML/RAG/GenAI Developer
-        </span>
-        <span className="bg-blue-100 text-blue-800 px-4 py-1 rounded-full text-sm transition-transform transform hover:scale-105">
-          Master’s in CS
-        </span>
-        <span className="bg-blue-100 text-blue-800 px-4 py-1 rounded-full text-sm transition-transform transform hover:scale-105">
-          Teaching Assistant – LLMs
-        </span>
-        <span className="bg-blue-100 text-blue-800 px-4 py-1 rounded-full text-sm transition-transform transform hover:scale-105">
-          3+ Years Experience
-        </span>
-        <span className="bg-blue-100 text-blue-800 px-4 py-1 rounded-full text-sm transition-transform transform hover:scale-105">
-          Ex Infoscion
-        </span>
+        {[
+          'AI/ML/RAG/GenAI Developer',
+          'Master’s in CS',
+          'Teaching Assistant – LLMs',
+          '3+ Years Experience',
+          'Ex Infoscion',
+        ].map((tag, idx) => (
+          <span
+            key={idx}
+            className="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-4 py-1 rounded-full text-sm transition-transform transform hover:scale-105"
+          >
+            {tag}
+          </span>
+        ))}
       </div>
     </section>
   );
